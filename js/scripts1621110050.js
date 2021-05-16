@@ -68,4 +68,61 @@
         window.addEventListener("load", hashHandler, false);
     }
     window.onbeforeunload = hashHandler;
+
+    new CanvasJS.Chart("persona-no-permanent", {
+        theme: "light1", // "light1", "light2", "dark1", "dark2"
+        //exportEnabled: true,
+        animationEnabled: true,
+        title: {
+            text: "Personal no permanent",
+            fontSize: 15,
+            fontFamily: 'calibri',
+            fontWeight: 'lighter'
+        },
+        data: [{
+            type: "pie",
+            startAngle: 40,
+            toolTipContent: "<b>{label}</b>: {y}%",
+            //showInLegend: "true",
+            legendText: "{label}",
+            indexLabelFontSize: 12,
+            indexLabel: "{label} - {y}%",
+            dataPoints: [
+                { label: "ETSEIB", y: 53 },
+                { label: "FIB", y: 27 },
+                { label: "ETSETB", y: 3 },
+                { label: "EETAC", y: 30 },
+                { label: "EPSEVG", y: 35 }
+            ]
+        }]
+    }).render();
+
+    new CanvasJS.Chart("ratio-estudiant-professorat", {
+        animationEnabled: true,
+        theme: "light1", // "light1", "light2", "dark1", "dark2"
+        title: {
+            text: "Estudiant / Professorat",
+            fontSize: 15,
+            fontFamily: 'calibri',
+            fontWeight: 'lighter'
+        },
+        axisY: {
+            //suffix: "%"
+        },
+        data: [{
+            type: "column",
+            indexLabel: "{y}",
+            indexLabelFontColor: "#EEEEEE",
+            indexLabelPlacement: "inside",
+            indexLabelFontSize: 12,
+            dataPoints: [
+                { label: "ETSEIB", y: 20.2 },
+                { label: "FIB", y: 14.2 },
+                { label: "ETSETB", y: 8.8 },
+                { label: "EETAC", y: 13.7 },
+                { label: "EPSEVG", y: 15.1 }
+
+            ]
+        }]
+    }).render();
 })(jQuery); // End of use strict
