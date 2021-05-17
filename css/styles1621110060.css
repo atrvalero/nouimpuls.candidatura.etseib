@@ -10538,8 +10538,15 @@ ul {
 
 @media (max-width: 1070px) {
   .programa-bottom-container {
-    overflow: hidden;
-    margin-top: 15px;
+    /*overflow: hidden;*/
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 905px) {
+  .programa-bottom-container {
+    /*overflow: hidden;*/
+    margin-top: 100px;
   }
 }
 
