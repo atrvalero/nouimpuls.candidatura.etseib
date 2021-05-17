@@ -7,7 +7,7 @@
     "use strict"; // Start of use strict
 
     $('.collapsed-menu').append('<div class="p-4 menu-color">\n' +
-        '    <h4 style="color: #717171;">Coneix-nos</h4>\n' +
+        '    <h4 style="color: #717171;">Coneix-nos  ·  #NouImpulsETSEIB <a class="js-scroll-trigger" style="margin-left: 3px;/*color:#1da1f2;*/" href="https://twitter.com/nouimpulsetseib" target="_blank"><i class="fab fa-twitter"></i></a></span></h4>\n' +
         '    <a class="js-scroll-trigger" href="#candidatura">La Candidatura </a><span>|</span>\n' +
         '    <a class="js-scroll-trigger" href="#equip">El nostre equip. Posa\'ns cara. </a><span>|</span>\n' +
         '    <a class="js-scroll-trigger" href="#presentacio">Presentació </a><span>|</span>\n' +
